@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+<div class="container">
+  <a class="active" href="/">Головна</a>
+  <a class="forbidden_tours" href="#">Заброньовані тури</a>
+  <a class="add_tours" href="/add-tour">Додати тур</a>
+</div>
+<br>
+<form method="post" enctype="multipart/form-data">
+    <lable for="photo">Фото:</lable>
+    <input type="file" name="photo" accept="image/*" required>
+    <label for="name">Назва:</label>
+    <input type="text" name="name" required>
+    <label for="description">Опис:</label>
+    <textarea name="description" required></textarea>
+    <label for="price">Ціна:</label>
+    <input type="text" name="price" required>
+    <button type="submit">Додати тур</button>
+</form>
+</body>
+</html>
