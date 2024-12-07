@@ -43,5 +43,20 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<div class="row row-cols-1 row-cold-md-3 g-4">
+  {% for item in data %}
+  <div class="col">
+    <div class="card">
+      <img src="/uploads/{{ item[1] }}" class="card-img-top" alt="Card image" style="width: 100%">
+      <div class="card-body">
+        <h5 class="card-title">{{ item[2] }}</h5>
+        <p class="card-text">{{ item[3] }}</p>
+        <h5 class="card-price">{{ item[4] }} грн</h5>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
 </body>
 </html>
